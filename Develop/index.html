@@ -20,7 +20,7 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
     <title>Work Day Scheduler</title>
   </head>
 
@@ -31,11 +31,19 @@
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
+      <div class= "row">
+      <div class= "col-md-3" class= "hour"></div>
+      <input class= "col-md-6" class= "textarea"></input>
+      <div clas= "future"></div>
+      <duv class= "present"></duv>
+      <div class = "future"></div>
+      <button class= "col-md-3" class= "saveBtn">save</button>
+      </div>
+
       <!-- Timeblocks go here -->
-      <div class ="hour"></div>
-      <div class ="row"></div>
-      <div class = "time-block"></div>
+ 
     </div>
+    
     <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>

@@ -1,8 +1,9 @@
 function myDate() {
     var d = new Date();
-    var n = d.toString();
-    var day = $(".lead");
+    var n = d.toJSON();
+    var day = $("#currentDay");
     day.text(n);
+    day.append(n);
 
 };
 
@@ -35,12 +36,13 @@ function getSchedule(){
   for(var i = 0; i < pm.length; i++);
   var hrs = $("<div>");
   hrs.addClass("row");
-  hrs.attr("data-numbers", pm[i]);
-  hrs.text(pm[i]);
+  hrs.attr("row" + pm[i]);
+  hrs.text(pm[i] + "Pm");
   $(".row").append(hrs);
   
-
- 
+  $("<div>").append(".col");
+  $("<div>").append(".col");
+  $("<div>").append(".col");
     // append 3 divs with the bootstrap 'col' classes to the above row 
     // these keep hour, text, and save button
     // I color the text column depending on status
